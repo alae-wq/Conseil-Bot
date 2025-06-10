@@ -25,4 +25,5 @@ if st.button("Envoyer", key="submit_button"):
         st.session_state.chat_history.append(("user", user_input))
         response = get_response(user_input)
         st.session_state.chat_history.append(("bot", response))
+        st.cache_data.clear()
 
