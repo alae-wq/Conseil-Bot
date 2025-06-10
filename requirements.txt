@@ -2,3 +2,4 @@ streamlit
 torch
 nltk
 numpy
+sentence-transformers
