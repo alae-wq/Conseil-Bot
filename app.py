@@ -46,6 +46,6 @@ if user_input:
     st.session_state.chat_history.append(("user", user_input))
     response = get_response(user_input)
     st.session_state.chat_history.append(("bot", response))
-    st.session_state.user_input = ""  # reset après envoi
+    st.experimental_set_query_params(dummy="")
     st.experimental_rerun()
 
