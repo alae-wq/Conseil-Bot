@@ -15,7 +15,7 @@ for sender, msg in st.session_state.chat_history:
     else:
         st.markdown(f"**🤖 {bot_name} :** {msg}")
 
-# Zone de texte + reconnaissance vocale JS
+# Reconnaissance vocale (JavaScript)
 st.markdown("""
     <script>
         function startRecognition() {
@@ -31,19 +31,23 @@ st.markdown("""
     </script>
 """, unsafe_allow_html=True)
 
-# Champ texte avec bouton vocal
+# Champ texte
 st.text_input("Pose ta question :", key="user_input", label_visibility="collapsed")
 
+# Boutons
 col1, col2 = st.columns([4, 1])
 with col1:
-    st.button("Envoyer", key="submit_button")
+    envoyer = st.button("Envoyer", key="submit_button")
 with col2:
     st.markdown('<button onclick="startRecognition()">🎙 Parler</button>', unsafe_allow_html=True)
 
 # Traitement de la réponse
 user_input = st.session_state.get("user_input", "").strip()
-if user_input:
+if envoyer and user_input:
     st.session_state.chat_history.append(("user", user_input))
     response = get_response(user_input)
+    st.session_state.chat_history.append(("bot", response))
+    st.session_state.user_input = ""  # ✅ vide le champ sans bug
+
     
 
