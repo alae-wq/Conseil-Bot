@@ -1,0 +1,189 @@
+{
+  "intents": [
+    {
+      "tag": "salutation",
+      "patterns": [
+        "Salut",
+        "Bonjour",
+        "Comment ça va",
+        "Y a-t-il quelqu'un ?",
+        "Hello",
+        "Bonne journée"
+      ],
+      "responses": [
+        "Salut :-) Comment puis-je vous aider aujourd'hui ?",
+        "Bonjour, merci de votre visite. Je suis là pour vous assister.",
+        "Salut, que puis-je faire pour vous ?",
+        "Bonjour, comment puis-je vous aider en matière de premiers secours ?"
+      ]
+    },
+    {
+      "tag": "au-revoir",
+      "patterns": [
+        "Au revoir",
+        "À plus tard",
+        "Adieu",
+        "Bonne soirée",
+        "Merci et au revoir"
+      ],
+      "responses": [
+        "À bientôt, prenez bien soin de vous.",
+        "Bonne journée, n'hésitez pas à revenir si vous avez besoin d'aide.",
+        "Au revoir ! Revenez quand vous voulez pour plus de conseils.",
+        "Merci de votre visite, portez-vous bien."
+      ]
+    },
+    {
+      "tag": "position_dormir_douleur_dos",
+      "patterns": [
+        "Quelle est la bonne position pour dormir quand on a mal au dos ?",
+        "Comment bien dormir si j’ai mal au dos ?",
+        "Pourquoi j’ai mal au dos quand je dors ?"
+      ],
+      "responses": [
+        "Si vous avez mal au dos, dormez sur le côté avec un oreiller entre les genoux, ou sur le dos avec un coussin sous les genoux. Évitez de dormir sur le ventre."
+      ]
+    },
+    {
+      "tag": "parler",
+      "patterns": [
+        "🎤 Parlez maintenant..."
+      ],
+      "responses": [
+        "Tu peux parler maintenant en cliquant sur parler."
+      ]
+    },
+    {
+      "tag": "chute_maison_prevention",
+      "patterns": [
+        "Comment éviter les chutes à la maison ?",
+        "Pourquoi les gens tombent-ils souvent chez eux ?",
+        "Quels conseils pour prévenir les chutes ?"
+      ],
+      "responses": [
+        "Sécurisez votre maison : enlevez les obstacles, fixez les tapis, éclairez bien les escaliers et utilisez des barres d’appui si nécessaire."
+      ]
+    },
+    {
+      "tag": "etouffement_reaction",
+      "patterns": [
+        "Comment réagir en cas d’étouffement ?",
+        "Quels gestes pour une personne qui s’étouffe ?",
+        "Que faire si quelqu’un ne peut plus respirer ?"
+      ],
+      "responses": [
+        "Encouragez la personne à tousser. Si elle ne peut plus respirer, effectuez 5 tapes dans le dos, puis 5 compressions abdominales (manœuvre de Heimlich). Appelez les secours."
+      ]
+    },
+    {
+      "tag": "brulure_legere_soins",
+      "patterns": [
+        "Comment soigner une brûlure légère ?",
+        "Que faire après une petite brûlure ?",
+        "Quels soins pour une brûlure domestique ?"
+      ],
+      "responses": [
+        "Passez la zone brûlée sous l’eau tiède pendant 10 minutes. N’utilisez pas de glace ni de corps gras. Appliquez une crème apaisante spéciale brûlure."
+      ]
+    },
+    {
+      "tag": "saignement_nez_soins",
+      "patterns": [
+        "Comment arrêter un saignement de nez ?",
+        "Que faire en cas d’épistaxis ?",
+        "Pourquoi le nez saigne ?"
+      ],
+      "responses": [
+        "Penchez la tête en avant, pincez les narines pendant 10 minutes. Respirez par la bouche et appliquez du froid sur le nez."
+      ]
+    },
+    {
+      "tag": "malaise_signes_reaction",
+      "patterns": [
+        "Quels sont les signes d’un malaise ?",
+        "Comment réagir en cas de malaise ?",
+        "Que faire si quelqu’un s’évanouit ?"
+      ],
+      "responses": [
+        "Allongez la personne, surélevez ses jambes, desserrez ses vêtements. Appelez les secours si elle ne reprend pas rapidement connaissance."
+      ]
+    },
+    {
+      "tag": "crise_cardiaque_reaction",
+      "patterns": [
+        "Quels sont les signes d’une crise cardiaque ?",
+        "Comment aider une personne qui fait une crise cardiaque ?",
+        "Que faire en cas de douleur thoracique ?"
+      ],
+      "responses": [
+        "Appelez immédiatement le 15 ou le 112. Allongez la personne, rassurez-la, et ne lui donnez rien à manger ou boire. Surveillez sa respiration."
+      ]
+    },
+    {
+      "tag": "fracture_signes_reaction",
+      "patterns": [
+        "Comment savoir si c’est une fracture ?",
+        "Que faire en cas de fracture ?",
+        "Quels sont les gestes à éviter en cas d’os cassé ?"
+      ],
+      "responses": [
+        "Ne bougez pas le membre blessé. Immobilisez avec ce que vous avez sous la main. Appliquez du froid et appelez les secours si besoin."
+      ]
+    },
+    {
+      "tag": "intoxication_alimentaire",
+      "patterns": [
+        "Quels sont les symptômes d’une intoxication alimentaire ?",
+        "Que faire en cas de nourriture avariée ?",
+        "Comment réagir à une intoxication ?"
+      ],
+      "responses": [
+        "Repos, hydratation et surveillance. Consultez un médecin si les symptômes sont sévères (fièvre, sang dans les selles, déshydratation)."
+      ]
+    },
+    {
+      "tag": "piqure_insecte_soins",
+      "patterns": [
+        "Que faire après une piqûre d’insecte ?",
+        "Comment soulager une piqûre de moustique ?",
+        "Quels gestes pour une piqûre d’abeille ?"
+      ],
+      "responses": [
+        "Retirez le dard si nécessaire, désinfectez la zone, appliquez du froid et surveillez toute réaction allergique. Consultez en cas de gonflement important."
+      ]
+    },
+    {
+      "tag": "avc_signes_reaction",
+      "patterns": [
+        "Quels sont les signes d’un AVC ?",
+        "Comment reconnaître un AVC ?",
+        "Que faire en cas d’AVC ?"
+      ],
+      "responses": [
+        "Bouche déformée, faiblesse d’un côté, troubles de la parole. Appelez immédiatement le 15 ou le 112. Chaque minute compte."
+      ]
+    },
+    {
+      "tag": "urgence_appeler_secours",
+      "patterns": [
+        "Quand faut-il appeler les secours ?",
+        "Quels sont les numéros d’urgence ?",
+        "Comment contacter les urgences ?"
+      ],
+      "responses": [
+        "Au Maroc : SAMU = 15, Police = 19, Protection civile = 150, Gendarmerie = 177. En mobile : 112 fonctionne partout. Appelez sans attendre en cas de danger."
+      ]
+    },
+    {
+      "tag": "fatigue_excessive_signification",
+      "patterns": [
+        "Pourquoi suis-je tout le temps fatigué ?",
+        "Que signifie une fatigue chronique ?",
+        "Quand la fatigue devient-elle inquiétante ?"
+      ],
+      "responses": [
+        "Fatigue persistante peut être liée à stress, manque de sommeil, carences ou maladies. Consultez un médecin pour un diagnostic."
+      ]
+    }
+  ]
+}
