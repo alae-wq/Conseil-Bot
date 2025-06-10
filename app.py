@@ -15,35 +15,14 @@ for sender, msg in st.session_state.chat_history:
     else:
         st.markdown(f"**🤖 {bot_name} :** {msg}")
 
-# Zone de texte + reconnaissance vocale JS
-st.markdown("""
-    <script>
-        function startRecognition() {
-            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-            recognition.lang = "fr-FR";
-            recognition.onresult = function(event) {
-                const text = event.results[0][0].transcript;
-                document.getElementById("user_input").value = text;
-                document.getElementById("submit_button").click();
-            };
-            recognition.start();
-        }
-    </script>
-""", unsafe_allow_html=True)
-
-# Champ texte avec bouton vocal
+# Champ texte (sans reconnaissance vocale)
 st.text_input("Pose ta question :", key="user_input", label_visibility="collapsed")
 
-col1, col2 = st.columns([4, 1])
-with col1:
-    st.button("Envoyer", key="submit_button")
-with col2:
-    st.markdown('<button onclick="startRecognition()">🎙 Parler</button>', unsafe_allow_html=True)
+# Bouton unique
+if st.button("Envoyer", key="submit_button"):
+    user_input = st.session_state.get("user_input", "").strip()
+    if user_input:
+        st.session_state.chat_history.append(("user", user_input))
+        response = get_response(user_input)
+        st.session_state.chat_history.append(("bot", response))
 
-# Traitement de la réponse
-user_input = st.session_state.get("user_input", "").strip()
-if user_input:
-    st.session_state.chat_history.append(("user", user_input))
-    response = get_response(user_input)
-    st.session_state.chat_history.append(("bot", response))
-    
