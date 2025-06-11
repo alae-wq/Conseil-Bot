@@ -15,6 +15,9 @@
         "Bonjour, merci de votre visite. Je suis là pour vous assister.",
         "Salut, que puis-je faire pour vous ?",
         "Bonjour, comment puis-je vous aider en matière de premiers secours ?"
+      ],
+      "next": [
+        "position_dormir_douleur_dos", "chute_maison_prevention", "etouffement_reaction", "brulure_legere_soins", "saignement_nez_soins", "malaise_signes_reaction", "crise_cardiaque_reaction", "fracture_signes_reaction", "intoxication_alimentaire", "piqure_insecte_soins", "avc_signes_reaction", "urgence_appeler_secours", "fatigue_excessive_signification"
       ]
     },
     {
@@ -31,6 +34,9 @@
         "Bonne journée, n'hésitez pas à revenir si vous avez besoin d'aide.",
         "Au revoir ! Revenez quand vous voulez pour plus de conseils.",
         "Merci de votre visite, portez-vous bien."
+      ],
+      "next": [
+        "salutation"
       ]
     },
     {
@@ -42,15 +48,9 @@
       ],
       "responses": [
         "Si vous avez mal au dos, dormez sur le côté avec un oreiller entre les genoux, ou sur le dos avec un coussin sous les genoux. Évitez de dormir sur le ventre."
-      ]
-    },
-    {
-      "tag": "parler",
-      "patterns": [
-        "🎤 Parlez maintenant..."
       ],
-      "responses": [
-        "Tu peux parler maintenant en cliquant sur parler."
+      "next": [
+        "parler"
       ]
     },
     {
@@ -62,6 +62,9 @@
       ],
       "responses": [
         "Sécurisez votre maison : enlevez les obstacles, fixez les tapis, éclairez bien les escaliers et utilisez des barres d’appui si nécessaire."
+      ],
+      "next": [
+        "etouffement_reaction"
       ]
     },
     {
@@ -73,6 +76,9 @@
       ],
       "responses": [
         "Encouragez la personne à tousser. Si elle ne peut plus respirer, effectuez 5 tapes dans le dos, puis 5 compressions abdominales (manœuvre de Heimlich). Appelez les secours."
+      ],
+      "next": [
+        "brulure_legere_soins"
       ]
     },
     {
@@ -84,6 +90,9 @@
       ],
       "responses": [
         "Passez la zone brûlée sous l’eau tiède pendant 10 minutes. N’utilisez pas de glace ni de corps gras. Appliquez une crème apaisante spéciale brûlure."
+      ],
+      "next": [
+        "saignement_nez_soins"
       ]
     },
     {
@@ -95,6 +104,9 @@
       ],
       "responses": [
         "Penchez la tête en avant, pincez les narines pendant 10 minutes. Respirez par la bouche et appliquez du froid sur le nez."
+      ],
+      "next": [
+        "malaise_signes_reaction"
       ]
     },
     {
@@ -106,6 +118,9 @@
       ],
       "responses": [
         "Allongez la personne, surélevez ses jambes, desserrez ses vêtements. Appelez les secours si elle ne reprend pas rapidement connaissance."
+      ],
+      "next": [
+        "crise_cardiaque_reaction"
       ]
     },
     {
@@ -117,6 +132,9 @@
       ],
       "responses": [
         "Appelez immédiatement le 15 ou le 112. Allongez la personne, rassurez-la, et ne lui donnez rien à manger ou boire. Surveillez sa respiration."
+      ],
+      "next": [
+        "urgence_appeler_secours"
       ]
     },
     {
@@ -128,6 +146,9 @@
       ],
       "responses": [
         "Ne bougez pas le membre blessé. Immobilisez avec ce que vous avez sous la main. Appliquez du froid et appelez les secours si besoin."
+      ],
+      "next": [
+        "urgence_appeler_secours"
       ]
     },
     {
@@ -139,6 +160,9 @@
       ],
       "responses": [
         "Repos, hydratation et surveillance. Consultez un médecin si les symptômes sont sévères (fièvre, sang dans les selles, déshydratation)."
+      ],
+      "next": [
+        "piqure_insecte_soins"
       ]
     },
     {
@@ -150,6 +174,9 @@
       ],
       "responses": [
         "Retirez le dard si nécessaire, désinfectez la zone, appliquez du froid et surveillez toute réaction allergique. Consultez en cas de gonflement important."
+      ],
+      "next": [
+        "fatigue_excessive_signification"
       ]
     },
     {
@@ -161,6 +188,9 @@
       ],
       "responses": [
         "Bouche déformée, faiblesse d’un côté, troubles de la parole. Appelez immédiatement le 15 ou le 112. Chaque minute compte."
+      ],
+      "next": [
+        "urgence_appeler_secours"
       ]
     },
     {
@@ -172,6 +202,9 @@
       ],
       "responses": [
         "Au Maroc : SAMU = 15, Police = 19, Protection civile = 150, Gendarmerie = 177. En mobile : 112 fonctionne partout. Appelez sans attendre en cas de danger."
+      ],
+      "next": [
+        "au-revoir"
       ]
     },
     {
@@ -183,7 +216,8 @@
       ],
       "responses": [
         "Fatigue persistante peut être liée à stress, manque de sommeil, carences ou maladies. Consultez un médecin pour un diagnostic."
-      ]
+      ],
+      "next": []
     }
   ]
 }
